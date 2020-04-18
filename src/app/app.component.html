@@ -1,31 +1,31 @@
 
 <table border = "2">
 
-  <tr *ngFor = "let produto of produtos"> 
+  <tr *ngFor = "let produto of produtos">
     <td>
-      {{produto.nome}} 
+      {{produto.nome}}
     </td>
     <td>
-      {{produto.valor}} 
+      {{produto.valor}}
     </td>
     <td>
-      <button (click) = adicionarCarrinho(produto)>Comprar</button> 
+      <button (click) = adicionarCarrinho(produto)>Comprar</button>
     </td>
   </tr>
   </table>
-  
-  <table border ="2"> 
+
+  <table border ="2">
     <tr>
-      <td>Nome:</td> 
+      <td>Nome:</td>
       <td>Quantidade:</td>
       <td>Valor:</td>
     </tr>
-    <tr *ngFor = "let produto of carrinho"> 
-      <td>{{produto.nome}}</td> 
-      <td>{{produto.qtd}}</td> 
-      <td>{{produto.valor*produto.qtd}}</td> 
+    <tr *ngFor = "let produto of carrinho">
+      <td>{{produto.nome}}</td>
+      <td>{{produto.qtd}}</td>
+      <td>{{produto.valor*produto.qtd}}</td>
     </tr>
     <tr><td>
       Total:
     </td>
-  <td colspan="2">R$: {{somaCarrinho}}</td></tr> 
+  <td colspan="2">R$: {{somaCarrinho}}</td></tr>
